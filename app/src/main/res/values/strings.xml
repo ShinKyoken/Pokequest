@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PokeQuest</string>
+    <string name="Partie">Partie</string>
+    <string name="Pokedex">Pokedex</string>
+    <string name="gerePokemon">Gérer Pokemon</string>
+    <string name="gereType">Gérer Type</string>
+    <string name="gereTalent">Gérer Talent</string>
+    <string name="Ajout">Ajouter</string>
+    <string name="Return">Retour</string>
+    <string name="level1">Normal</string>
+    <string name="level2">Hard</string>
+    <string name="level3">Extreme</string>
+    <string name="defaut"> ### </string>
+    <string name="Submit">Valider</string>
+</resources>

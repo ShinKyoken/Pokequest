@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Pokedex"
+            android:textAllCaps="true"
+            android:textColor="#2B2B2B"
+            android:textSize="70sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonConnexion"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:bottomLeftRadius="16dp"
+                    android:bottomRightRadius="16dp"
+                    android:onClick="lancerGererPokemon"
+                    android:text="@string/gerePokemon"
+                    android:textColor="#2B2B2B"
+                    android:topLeftRadius="16dp"
+                    android:topRightRadius="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonParametre"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:bottomLeftRadius="16dp"
+                    android:bottomRightRadius="16dp"
+                    android:onClick="lancerGererType"
+                    android:text="@string/gereType"
+                    android:textColor="#000000"
+                    android:topLeftRadius="16dp"
+                    android:topRightRadius="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonInscription"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:bottomLeftRadius="16dp"
+                    android:bottomRightRadius="16dp"
+                    android:onClick="lancerGererTalent"
+                    android:text="@string/gereTalent"
+                    android:textColor="#2B2B2B"
+                    android:topLeftRadius="16dp"
+                    android:topRightRadius="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

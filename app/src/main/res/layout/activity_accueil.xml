@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Accueil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btPartie"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:onClick="playGame"
+            android:text="@string/Partie" />
+
+        <Button
+            android:id="@+id/btPokedex"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:onClick="goPokedex"
+            android:text="@string/Pokedex" />
+
+    </LinearLayout>
+
+</LinearLayout>

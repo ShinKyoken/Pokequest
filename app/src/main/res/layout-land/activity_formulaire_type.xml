@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".Type.FormulaireType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Titre"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Formulaire Type"
+            android:textAllCaps="true"
+            android:textColor="#2B2B2B"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text=" Nom du type : "
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Type"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonConfirmer"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:bottomLeftRadius="16dp"
+            android:bottomRightRadius="16dp"
+            android:onClick="ajouterType"
+            android:text="@string/Ajout"
+            android:textColor="#2B2B2B"
+            android:topLeftRadius="16dp"
+            android:topRightRadius="16dp" />
+    </LinearLayout>
+</LinearLayout>
