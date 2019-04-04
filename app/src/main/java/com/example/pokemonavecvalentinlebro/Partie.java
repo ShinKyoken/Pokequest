@@ -101,7 +101,7 @@ public class Partie extends AppCompatActivity {
         File imgFile = new  File(sharedPreferences.getString("image", ""));
         Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
 
-        if (Rep.equals(ConfirmRep)){
+        if (Rep.toLowerCase().equals(ConfirmRep.toLowerCase())){
             imageView.setImageBitmap(myBitmap);
             new AlertDialog.Builder(view.getContext())
                     .setIcon(android.R.drawable.ic_dialog_alert)
