@@ -31,8 +31,6 @@ Dans le git on trouvera deux branches principales, une "master" une "develop".
   
 Un "merge request" est une fonctionnalité de GitLab permettant de demander l'autorisation aux administrateur du GIT si oui ou non on autorise la fusion de votre branche au develop.
 
-**ATTENTION ! Ne jamais push sur MASTER, toutes vos modifs ce feront sur vos branches puis seront envoyés sur la branche "develop" et quand la version jugé fini, la branche "develop" et "master" seront fusionées !"**
-
 #### 1- Creation d'une branche
 
     git branch nomDeMaFonctionnalite
